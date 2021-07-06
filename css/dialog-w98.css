@@ -1,0 +1,71 @@
+.dlg-dialog {
+    border: none;
+	font-size: 11px;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    background: silver;
+    padding: 3px;
+}
+
+.dlg-header {
+    background: linear-gradient(90deg,navy,#1084d0);
+    color: white;
+	padding: 3px 2px 3px 3px;
+	font-size: 11px;
+	
+}
+
+.dlg-caption {
+    font-weight: 700;
+	font-size: 11px;
+	letter-spacing: 0;
+    text-shadow: 1px 1px 1px black;
+	height: 12px;
+}
+.dlg-close-button::before, .dlg-close-button::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    background-color: transparent;
+}
+.dlg-button, .dlg-close-button, .dlg-button-area > button{
+	font-size: 11px;
+    box-sizing: border-box;
+    border: none;
+    background: silver;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    border-radius: 0;
+    min-width: 75px;
+    min-height: 23px;
+    padding: 0 12px;
+}
+.dlg-button:active, .dlg-close-button:active, .dlg-button-area > button:not(:disabled):active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+}
+.dlg-button:focus, .dlg-button-area > button:focus {
+    outline: 1px dotted #000;
+    outline-offset: -4px;
+}
+.dlg-close-button {
+    margin-left: 2px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: top 3px left 4px;
+	min-width: 16px;
+	min-height: 14px;
+	padding: 0;
+}
+
+.dlg-content input, .dlg-content select, .dlg-content textarea {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+	font-size: 11px;
+	border: none;
+	padding: 3px 4px;
+	appearance: none;
+    border-radius: 0;
+    height: 21px;
+	background-color: #fff;
+    box-sizing: border-box;
+}
+.dlg-content input:focus, .dlg-content select:focus, .dlg-content textarea:focus {
+outline: none;}
